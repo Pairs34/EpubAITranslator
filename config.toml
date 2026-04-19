@@ -1,0 +1,17 @@
+[model]
+nllb_speed    = "facebook/nllb-200-distilled-600M"
+nllb_quality  = "facebook/nllb-200-distilled-1.3B"
+llm_speed     = "Qwen/Qwen2.5-1.5B-Instruct"
+llm_quality   = "Qwen/Qwen2.5-7B-Instruct"
+cache_dir     = "models"
+custom_models = "google/translategemma-4b-it"
+
+[translator]
+batch_size        = 8
+cpu_usage_percent = 50
+
+[output]
+dir = "translated"
+
+[auth]
+hf_token = "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"
